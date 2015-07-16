@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <option name="DEFAULT_COMPILER" value="Javac" />
     <resourceExtensions />
     <wildcardResourcePatterns>
       <entry name="?*.properties" />
@@ -27,6 +26,8 @@
         <module name="exercise" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="exercise" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
-
