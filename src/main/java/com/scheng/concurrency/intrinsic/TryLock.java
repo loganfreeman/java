@@ -6,6 +6,7 @@ package com.scheng.concurrency.intrinsic;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReentrantLock;
 
+import org.apache.log4j.BasicConfigurator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,6 +16,7 @@ public class TryLock {
 	private final ReentrantLock lock2 = new ReentrantLock();
 
 	public static void main(String[] args) {
+        BasicConfigurator.configure();
 		TryLock app = new TryLock();
 		Thread t1 = new Thread(new Worker1(app), "Thread-1");
 		Thread t2 = new Thread(new Worker2(app), "Thread-2");

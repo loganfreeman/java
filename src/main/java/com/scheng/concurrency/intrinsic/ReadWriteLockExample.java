@@ -4,6 +4,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
+import org.apache.log4j.BasicConfigurator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -16,6 +17,7 @@ public class ReadWriteLockExample {
 	private Data data = new Data("default value");
 	
 	public static void main(String[] args) {
+		BasicConfigurator.configure();
 		ReadWriteLockExample example = new ReadWriteLockExample();
 		example.start();
 	}
