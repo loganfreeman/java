@@ -56,6 +56,17 @@
       	<artifactId>guava</artifactId>
       	<version>18.0</version>
       </dependency>
+      <dependency>
+          <groupId>com.github.avarabyeu</groupId>
+          <artifactId>wills</artifactId>
+          <version>0.0.2</version>
+      </dependency>
+      <dependency>
+      	<groupId>com.smarttested</groupId>
+      	<artifactId>smartassert</artifactId>
+      	<version>1.0.2</version>
+      </dependency>
+
 
 
 
